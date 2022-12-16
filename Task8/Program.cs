@@ -1,2 +1,28 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+Console.Write("Введите целое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+// Знаю, что код можно сделать намного проще - в один цикл, но сделал так, чтобы убрать запятую в конце вывода, 
+// чтобы буквальней соответсвовать требуемому в задаче результату и так лучше смотрится сам результат
+
+if (a % 2 == 0){
+for (int i = 2; i < a; i++) {
+    if (i % 2 == 0) {
+        Console.Write(i + ", ");
+    }
+}
+if (a % 2 == 0) {
+        Console.Write(a);
+}
+}
+
+if (a % 2 > 0){
+for (int i = 2; i < a - 2; i++) {
+    if (i % 2 == 0) {
+        Console.Write(i + ", ");
+    }
+}
+if (a % 2 > 0) {
+        Console.Write(a - 1);
+}
+}
